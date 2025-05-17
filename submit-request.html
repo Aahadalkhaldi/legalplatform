@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب خدمة قانونية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>طلب خدمة قانونية</h1>
+  </header>
+  <main>
+    <form>
+      <label for="service">نوع الخدمة:</label>
+      <select id="service">
+        <option value="استثمار">استثمار</option>
+        <option value="جنائي">جنائي</option>
+        <option value="أسرة">أسرة</option>
+      </select>
+      <label for="details">تفاصيل الخدمة:</label>
+      <textarea id="details" rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </main>
+  <script type="module" src="submit-request.js"></script>
+</body>
+</html>
