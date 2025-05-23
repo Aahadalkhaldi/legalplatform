@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // قاعدة عامة تتيح للكل القراءة والكتابة (غير آمنة للإنتاج)
+    match /{document=**} {
+      allow read, write: if true;
+    }
+    // عدّل هذه القواعد وفقًا لاحتياجاتك الأمنية
+  }
+}
